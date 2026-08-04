@@ -55,7 +55,8 @@ python -m venv venv
 venv\Scripts\Activate.ps1          # Windows (PowerShell)
 # source venv/bin/activate         # Linux / macOS
 
-\``` dans powershell
+\``` dans powershell, 
+
 pip install -r requirements.txt
 \```
 
