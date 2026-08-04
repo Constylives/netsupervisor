@@ -55,13 +55,8 @@ python -m venv venv
 venv\Scripts\Activate.ps1          # Windows (PowerShell)
 # source venv/bin/activate         # Linux / macOS
 
+\``` dans powershell
 pip install -r requirements.txt
-\```
-
-Si `requirements.txt` n'existe pas encore, installe directement :
-
-\```powershell
-pip install aiohttp fastapi "uvicorn[standard]" websockets pydantic python-multipart PyQt6 qasync pyqtgraph icmplib pytest pytest-asyncio httpx asgi-lifespan pytest-timeout
 \```
 
 ## Lancement
