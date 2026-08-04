@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Test WebSocket NetSupervisor</h3>
+<pre id="log"></pre>
+<script>
+const log = document.getElementById('log');
+const ws = new WebSocket("ws://127.0.0.1:8000/ws");
+ws.onopen = () => log.textContent += "Connecté\n";
+ws.onmessage = (event) => log.textContent += event.data + "\n";
+ws.onclose = () => log.textContent += "Déconnecté\n";
+ws.onerror = (e) => log.textContent += "Erreur: " + e + "\n";
+</script>
+</body>
+</html>
